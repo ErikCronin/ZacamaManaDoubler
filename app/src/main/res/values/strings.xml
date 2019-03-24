@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ZacamaDoubler</string>
+    <string name="HoS_Text">Heartbeat of Spring</string>
+    <string name="VB_Text">Vernal Bloom</string>
+    <string name="KoP_Text">Keeper of Progenitus</string>
+    <string name="cs_Text">Caged Sun</string>
+    <string name="mr_Text">Mana Reflection</string>
+    <string name="mana_doubler_title">Select your active doublers.</string>
+    <string name="zero">0</string>
+    <string name="tapped_lands">Total tapped mana before doublers:</string>
+    <string name="total_mana">Total Mana</string>
+    <string name="plains">Plains</string>
+    <string name="total_white">Total White</string>
+    <string name="island">Island</string>
+    <string name="total_blue">Total Blue: </string>
+    <string name="swamp">Swamp</string>
+    <string name="total_black">Total Black: </string>
+    <string name="mountain">Mountain</string>
+    <string name="total_red">Total Red: </string>
+    <string name="forest">Forest</string>
+    <string name="total_forest">Total Forest: </string>
+    <string name="go_to_mana_tracker">Go to mana tracker</string>
+    <string name="mana_tracker_title">Press a button to detract one from total mana</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="dok_text">Dictate of Karametra</string>
+    <string name="mf_text">Mana Flare</string>
+    <string name="mw_text">Mirari\'s Wake</string>
+    <string name="oa_text">Overabundance</string>
+    <string name="rb_text">Regal Behemoth</string>
+    <string name="vh_text">Vorinclex, Voice of Hunger</string>
+    <string name="zr_text">Zendikar Resurgent</string>
+    <string name="zta_text">Zhur-Taa Ancient</string>
+</resources>

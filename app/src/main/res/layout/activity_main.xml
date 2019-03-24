@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B5829"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+
+        android:text="@string/mana_doubler_title"
+        android:textColor="#edd8c4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hos_textview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/HoS_Text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/dok_textview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/dok_text"
+                android:textColor="#edd8c4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/hos_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_hos_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/dok_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_dok_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kop_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/KoP_Text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/mf_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/mf_text"
+                android:textColor="#edd8c4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/kop_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_kop_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/mf_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_mf_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mr_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/mr_Text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/mw_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/mw_text"
+                android:textColor="#edd8c4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mr_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_mr_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/mw_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_mw_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/oa_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/oa_text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/rb_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/rb_text"
+                android:textColor="#edd8c4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/oa_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_oa_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/rb_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_rb_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vb_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/VB_Text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/vh_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/vh_text"
+                android:textColor="#edd8c4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/vh_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_vh_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/vb_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_vb_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zr_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/zr_text"
+                android:textColor="#edd8c4" />
+
+            <TextView
+                android:id="@+id/zta_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/zta_text"
+                android:textColor="#edd8c4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/zta_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_zta_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/zr_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_zr_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,ButtonStyle,LabelFor,UnusedAttribute" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cs_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+
+                android:text="@string/cs_Text"
+                android:textColor="#edd8c4" />
+
+            <Button
+                android:id="@+id/cs_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#5B9AAF"
+
+                android:ems="10"
+                android:onClick="buttonClicked_cs_active"
+                android:text="@string/no"
+                tools:ignore="Autofill,LabelFor,UnusedAttribute" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tapped_lands_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25sp"
+            android:text="@string/tapped_lands"
+
+            android:textColor="#edd8c4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7F3CE"
+                android:orientation="vertical"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <TextView
+                    android:id="@+id/plains_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/plains"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/plains_userinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:text="@string/zero"
+
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:background="#B7DFF5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/island_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/island"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/island_userinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2.5dp"
+                    android:ems="2"
+                    android:inputType="number"
+
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#C9C0BB"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:id="@+id/swamp_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/swamp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/swamp_userinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+
+                    android:inputType="number"
+
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5B99C"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <TextView
+                    android:id="@+id/mountain_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/mountain"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mountain_userinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A4C9A8"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:id="@+id/forest_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/forest"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/forest_userinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/mana_tracker_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5B9AAF"
+        android:onClick="buttonClicked_mana_tracker"
+        android:paddingTop="25sp"
+        android:paddingBottom="25sp"
+        android:text="@string/go_to_mana_tracker"
+        tools:ignore="UnusedAttribute" />
+
+</LinearLayout>

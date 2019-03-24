@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ManaTracker">
+
+    <TextView
+        android:id="@+id/mana_tracker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="35sp"
+        android:text="@string/mana_tracker_title" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/plains_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:padding="25sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="@string/plains" />
+
+            <EditText
+                android:id="@+id/white_edittext_mana_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:inputType="number"
+                android:text="@string/zero"
+                tools:ignore="Autofill,LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/island_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:padding="25sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="@string/island" />
+
+            <EditText
+                android:id="@+id/blue_edittext_mana_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:inputType="number"
+                android:text="@string/zero"
+                tools:ignore="Autofill,LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/black_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:padding="25sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="@string/swamp" />
+
+            <EditText
+                android:id="@+id/black_edittext_mana_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:inputType="number"
+                android:text="@string/zero"
+                tools:ignore="Autofill,LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/mountain_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:padding="25sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="@string/mountain" />
+
+            <EditText
+                android:id="@+id/red_edittext_mana_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:inputType="number"
+                android:text="@string/zero"
+                tools:ignore="Autofill,LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/forest_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:padding="25sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="@string/forest" />
+
+            <EditText
+                android:id="@+id/green_edittext_mana_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:inputType="number"
+                android:text="@string/zero"
+                tools:ignore="Autofill,LabelFor"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
