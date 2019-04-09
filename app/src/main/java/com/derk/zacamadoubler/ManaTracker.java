@@ -3,6 +3,8 @@ package com.derk.zacamadoubler;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
 
@@ -172,4 +174,45 @@ public class ManaTracker extends Activity {
         mountain_view.setText(mountain_output);
         forest_view.setText(forest_output);
     }
+
+    public void onPlainsClick(View view){
+        EditText plains_view = (EditText) findViewById(R.id.white_edittext_mana_tracker);
+
+        int total_plains = Integer.parseInt(plains_view.getText().toString());
+        total_plains -= 1;
+        plains_view.setText(Integer.toString(total_plains));
+    }
+
+    public void onIslandClick(View view){
+        EditText island_view = (EditText) findViewById(R.id.blue_edittext_mana_tracker);
+
+        int total_islands = Integer.parseInt(island_view.getText().toString());
+        total_islands -= 1;
+        island_view.setText(Integer.toString(total_islands));
+    }
+
+    public void onSwampClick(View view){
+        EditText swamp_view = (EditText) findViewById(R.id.black_edittext_mana_tracker);
+
+        int total_swamp = Integer.parseInt(swamp_view.getText().toString());
+        total_swamp -= 1;
+        swamp_view.setText(Integer.toString(total_swamp));
+    }
+
+    public void onMountainClick(View view){
+        EditText mountain_view = (EditText) findViewById(R.id.red_edittext_mana_tracker);
+
+        int total_mountains = Integer.parseInt(mountain_view.getText().toString());
+        total_mountains -= 1;
+        mountain_view.setText(Integer.toString(total_mountains));
+    }
+
+    public void onForestClick(View view){
+        EditText forest_view = (EditText) findViewById(R.id.green_edittext_mana_tracker);
+
+        int total_forests = Integer.parseInt(forest_view.getText().toString());
+        total_forests -= 1;
+        forest_view.setText(Integer.toString(total_forests));
+    }
 }
+

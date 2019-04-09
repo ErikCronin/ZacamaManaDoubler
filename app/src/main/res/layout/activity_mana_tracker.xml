@@ -4,11 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#8B5829"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".ManaTracker">
 
     <TextView
+        android:textColor="#edd8c4"
         android:id="@+id/mana_tracker_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +26,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#f0f000">
 
             <Button
                 android:id="@+id/plains_button"
@@ -33,7 +37,11 @@
                 android:padding="25sp"
                 android:paddingStart="50sp"
                 android:paddingEnd="50sp"
-                android:text="@string/plains" />
+                android:text="@string/plains"
+
+                android:backgroundTint="#fffe37"
+                tools:ignore="UnusedAttribute"
+                android:onClick="onPlainsClick"/>
 
             <EditText
                 android:id="@+id/white_edittext_mana_tracker"
@@ -50,7 +58,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#2EA2E1">
 
             <Button
                 android:id="@+id/island_button"
@@ -60,7 +69,11 @@
                 android:padding="25sp"
                 android:paddingStart="50sp"
                 android:paddingEnd="50sp"
-                android:text="@string/island" />
+                android:text="@string/island"
+
+                android:backgroundTint="#6bbde9"
+                tools:ignore="UnusedAttribute"
+                android:onClick="onIslandClick"/>
 
             <EditText
                 android:id="@+id/blue_edittext_mana_tracker"
@@ -77,7 +90,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#707070">
 
             <Button
                 android:id="@+id/black_button"
@@ -87,7 +101,11 @@
                 android:padding="25sp"
                 android:paddingStart="50sp"
                 android:paddingEnd="50sp"
-                android:text="@string/swamp" />
+                android:text="@string/swamp"
+
+                android:backgroundTint="#939393"
+                tools:ignore="UnusedAttribute"
+                android:onClick="onSwampClick"/>
 
             <EditText
                 android:id="@+id/black_edittext_mana_tracker"
@@ -104,7 +122,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#FF3333">
 
             <Button
                 android:id="@+id/mountain_button"
@@ -114,7 +133,11 @@
                 android:padding="25sp"
                 android:paddingStart="50sp"
                 android:paddingEnd="50sp"
-                android:text="@string/mountain" />
+                android:text="@string/mountain"
+
+                android:backgroundTint="#FF1717"
+                tools:ignore="UnusedAttribute"
+                android:onClick="onMountainClick"/>
 
             <EditText
                 android:id="@+id/red_edittext_mana_tracker"
@@ -131,7 +154,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#66CC66">
 
             <Button
                 android:id="@+id/forest_button"
@@ -141,7 +165,11 @@
                 android:padding="25sp"
                 android:paddingStart="50sp"
                 android:paddingEnd="50sp"
-                android:text="@string/forest" />
+                android:text="@string/forest"
+
+                android:backgroundTint="#56aa56"
+                tools:ignore="UnusedAttribute"
+                android:onClick="onForestClick"/>
 
             <EditText
                 android:id="@+id/green_edittext_mana_tracker"
